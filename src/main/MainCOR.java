@@ -1,6 +1,6 @@
 package main;
 
-import cor.*;
+import cor.verbe.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -29,11 +29,26 @@ public abstract class Verbe {
 	public String conjugue1erePersonneSingulier() {
 		return ListeVerbes.pronom[0]+" "+this.getRadical()+this.terminaison1erePersonneSingulier();
 	}
-	
 	public String conjugue1erePersonnePluriel() {
 		return ListeVerbes.pronom[3]+" "+this.getRadical()+this.terminaison1erePersonnePluriel();
 	}
-	
+
+	public String conjugue2emePersonneSingulier() {
+		return ListeVerbes.pronom[1]+" "+this.getRadical()+this.terminaison2emePersonneSingulier();
+	}
+	public String conjugue2emePersonnePluriel() {
+		return ListeVerbes.pronom[4]+" "+this.getRadical()+this.terminaison2emePersonnePluriel();
+	}
+
+	public String conjugue3emePersonneSingulier() {
+		return ListeVerbes.pronom[2]+" "+this.getRadical()+this.terminaison3emePersonneSingulier();
+	}
+
+	public String conjugue3emePersonnePluriel() {
+		return ListeVerbes.pronom[5]+" "+this.getRadical()+this.terminaison3emePersonnePluriel();
+	}
+
+
 	public String conjugueParticipePresent() {
 		return ListeVerbes.pronom[6]+" "+this.getParticipePresent();
 	}
@@ -50,9 +65,20 @@ public abstract class Verbe {
 		sb.replace(sb.length()-3, sb.length(), "ant");
 		return sb.toString();
 	}
-	
+	/*
+	PRESENT
+	 */
 	public abstract String terminaison1erePersonneSingulier();
+	public abstract String terminaison2emePersonneSingulier();
+	public abstract String terminaison3emePersonneSingulier();
 	public abstract String terminaison1erePersonnePluriel();
+	public abstract String terminaison2emePersonnePluriel();
+	public abstract String terminaison3emePersonnePluriel();
 
-
+	/*
+	FUTUR
+	 */
+	/*
+	PASSE COMPOSE
+	 */
 }

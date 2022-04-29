@@ -20,5 +20,23 @@ public class VerbeOudre extends VerbeGroupe3 {
 	public String terminaison1erePersonnePluriel() {
 		return "sons";
 	}
+	@Override
+	public String terminaison2emePersonneSingulier() {
+		return "ds";
+	}
 
+	@Override
+	public String terminaison3emePersonneSingulier() {
+		return "d";
+	}
+
+	@Override
+	public String terminaison2emePersonnePluriel() {
+		return "sez";
+	}
+
+	@Override
+	public String terminaison3emePersonnePluriel() {
+		return "sent";
+	}
 }

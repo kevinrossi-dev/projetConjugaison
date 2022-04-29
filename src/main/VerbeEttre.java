@@ -21,5 +21,23 @@ public class VerbeEttre extends VerbeGroupe3 {
     public String terminaison1erePersonnePluriel() {
         return "ettons";
     }
+    @Override
+    public String terminaison2emePersonneSingulier() {
+        return "ets";
+    }
 
+    @Override
+    public String terminaison3emePersonneSingulier() {
+        return "et";
+    }
+
+    @Override
+    public String terminaison2emePersonnePluriel() {
+        return "ettons";
+    }
+
+    @Override
+    public String terminaison3emePersonnePluriel() {
+        return "ettent";
+    }
 }

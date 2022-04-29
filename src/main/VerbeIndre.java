@@ -23,4 +23,23 @@ public class VerbeIndre extends VerbeGroupe3 {
 		return "gnons";
 	}
 
+	@Override
+	public String terminaison2emePersonneSingulier() {
+		return "ns";
+	}
+
+	@Override
+	public String terminaison3emePersonneSingulier() {
+		return "nt";
+	}
+
+	@Override
+	public String terminaison2emePersonnePluriel() {
+		return "gnez";
+	}
+
+	@Override
+	public String terminaison3emePersonnePluriel() {
+		return "gnent";
+	}
 }

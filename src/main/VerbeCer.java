@@ -10,7 +10,7 @@ public class VerbeCer extends VerbeGroupe1 {
 	
 	@Override
 	public String conjugue1erePersonnePluriel() {
-		return ListeVerbes.pronom[3]+" "+this.getRadical().replace("c","ç")+this.terminaison1erePersonnePluriel();
+		return this.getRadical().replace("c","ç")+this.terminaison1erePersonnePluriel();
 	}	
 	
 

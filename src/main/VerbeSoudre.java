@@ -20,5 +20,23 @@ public class VerbeSoudre extends VerbeGroupe3 {
 	public String terminaison1erePersonnePluriel() {
 		return "lvons";
 	}
+	@Override
+	public String terminaison2emePersonneSingulier() {
+		return "us";
+	}
 
+	@Override
+	public String terminaison3emePersonneSingulier() {
+		return "ut";
+	}
+
+	@Override
+	public String terminaison2emePersonnePluriel() {
+		return "lvez";
+	}
+
+	@Override
+	public String terminaison3emePersonnePluriel() {
+		return "lvent";
+	}
 }

@@ -17,10 +17,29 @@ public class VerbeGroupe3 extends Verbe{
 	}
 
 	@Override
+	public String terminaison2emePersonneSingulier() {
+		return "";
+	}
+
+	@Override
+	public String terminaison3emePersonneSingulier() {
+		return "";
+	}
+
+	@Override
 	public String terminaison1erePersonnePluriel() {
 		return "";
 	}
 
-	
+	@Override
+	public String terminaison2emePersonnePluriel() {
+		return "";
+	}
+
+	@Override
+	public String terminaison3emePersonnePluriel() {
+		return "";
+	}
+
 
 }
