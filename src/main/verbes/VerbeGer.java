@@ -1,4 +1,4 @@
-package main;
+package main.verbes;
 
 public class VerbeGer extends VerbeGroupe1 {
 
@@ -11,6 +11,7 @@ public class VerbeGer extends VerbeGroupe1 {
 	public String terminaison1erePersonnePluriel() {
 		return "eons";
 	}
+
 
 
 }

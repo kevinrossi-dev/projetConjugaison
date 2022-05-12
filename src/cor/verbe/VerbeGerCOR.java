@@ -1,7 +1,7 @@
 package cor.verbe;
 
 import main.Verbe;
-import main.VerbeGer;
+import main.verbes.VerbeGer;
 
 public class VerbeGerCOR extends VerbeCOR{
 

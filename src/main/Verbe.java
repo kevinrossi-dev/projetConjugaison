@@ -78,7 +78,66 @@ public abstract class Verbe {
 	/*
 	FUTUR
 	 */
+	public abstract String terminaison1erePersonneSingulierFutur();
+	public abstract String terminaison2emePersonneSingulierFutur();
+	public abstract String terminaison3emePersonneSingulierFutur();
+	public abstract String terminaison1erePersonnePlurielFutur();
+	public abstract String terminaison2emePersonnePlurielFutur();
+	public abstract String terminaison3emePersonnePlurielFutur();
+
+	public String conjugue1erePersonneSingulierFutur() {
+		return ListeVerbes.pronom[0]+" "+this.getRadical()+this.terminaison1erePersonneSingulierFutur();
+	}
+	public String conjugue1erePersonnePlurielFutur() {
+		return ListeVerbes.pronom[3]+" "+this.getRadical()+this.terminaison1erePersonnePlurielFutur();
+	}
+
+	public String conjugue2emePersonneSingulierFutur() {
+		return ListeVerbes.pronom[1]+" "+this.getRadical()+this.terminaison2emePersonneSingulierFutur();
+	}
+	public String conjugue2emePersonnePlurielFutur() {
+		return ListeVerbes.pronom[4]+" "+this.getRadical()+this.terminaison2emePersonnePlurielFutur();
+	}
+
+	public String conjugue3emePersonneSingulierFutur() {
+		return ListeVerbes.pronom[2]+" "+this.getRadical()+this.terminaison3emePersonneSingulierFutur();
+	}
+
+	public String conjugue3emePersonnePlurielFutur() {
+		return ListeVerbes.pronom[5]+" "+this.getRadical()+this.terminaison3emePersonnePlurielFutur();
+	}
+
 	/*
 	PASSE COMPOSE
 	 */
+
+	public abstract String terminaison1erePersonneSingulierPasseCompose();
+	public abstract String terminaison2emePersonneSingulierPasseCompose();
+	public abstract String terminaison3emePersonneSingulierPasseCompose();
+	public abstract String terminaison1erePersonnePlurielPasseCompose();
+	public abstract String terminaison2emePersonnePlurielPasseCompose();
+	public abstract String terminaison3emePersonnePlurielPasseCompose();
+
+	public String conjugue1erePersonneSingulierPasseCompose() {
+		return "J'ai "+this.getRadical()+this.getParticipePasse()+this.terminaison1erePersonneSingulierPasseCompose();
+	}
+	public String conjugue1erePersonnePlurielPasseCompose() {
+		return ListeVerbes.pronom[3]+" avons "+this.getRadical()+this.getParticipePasse()+this.terminaison1erePersonnePlurielPasseCompose();
+	}
+
+	public String conjugue2emePersonneSingulierPasseCompose() {
+		return ListeVerbes.pronom[1]+" as "+this.getRadical()+this.getParticipePasse()+this.terminaison2emePersonneSingulierPasseCompose();
+	}
+	public String conjugue2emePersonnePlurielPasseCompose() {
+		return ListeVerbes.pronom[4]+" avez "+this.getRadical()+this.getParticipePasse()+this.terminaison2emePersonnePlurielPasseCompose();
+	}
+
+	public String conjugue3emePersonneSingulierPasseCompose() {
+		return ListeVerbes.pronom[2]+" a "+this.getRadical()+this.getParticipePasse()+this.terminaison3emePersonneSingulierPasseCompose();
+	}
+
+	public String conjugue3emePersonnePlurielPasseCompose() {
+		return ListeVerbes.pronom[5]+" ont "+this.getRadical()+this.getParticipePasse()+this.terminaison3emePersonnePlurielPasseCompose();
+	}
+
 }

@@ -1,4 +1,4 @@
-package main;
+package main.verbes;
 
 
 public class VerbeAitre extends VerbeGroupe3 {
@@ -40,4 +40,37 @@ public class VerbeAitre extends VerbeGroupe3 {
 	public String terminaison3emePersonnePluriel() {
 		return "aissent";
 	}
+
+	@Override
+	public String terminaison1erePersonneSingulierFutur() {
+		return "aîtrai";
+	}
+
+	@Override
+	public String terminaison2emePersonneSingulierFutur() {
+		return "aîtras";
+	}
+
+	@Override
+	public String terminaison3emePersonneSingulierFutur() {
+		return "aîtra";
+	}
+
+	@Override
+	public String terminaison1erePersonnePlurielFutur() {
+		return "aîtrons";
+	}
+
+	@Override
+	public String terminaison2emePersonnePlurielFutur() {
+		return "aîtrez";
+	}
+
+	@Override
+	public String terminaison3emePersonnePlurielFutur() {
+		return "aîtront";
+	}
+
+
+
 }

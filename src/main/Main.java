@@ -1,28 +1,27 @@
 package main;
 
-import main.personnes.ParticipePresent;
+import implementsInterfaces.ConjugaisonImplement;
+import interfaces.ConjugaisonInterface;
+import main.verbes.*;
 
+import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
+		try {
+			System.setProperty("java.rmi.server.hostname", "localhost");
+			LocateRegistry.createRegistry(2000);
+			ConjugaisonImplement obj = new ConjugaisonImplement();
+			Naming.rebind("rmi://localhost:2000/conjugaison", obj);
 
-		ArrayList<Verbe> liste = new ArrayList<Verbe>(Arrays.asList(
-				new VerbeGroupe1("marcher"),
-				new VerbeGroupe2("finir"),
-				new VerbeGer("manger"),
-				new VerbeCer("lancer"),
-				new VerbeAitre("paraitre"),
-				new VerbeOudre("coudre"),
-				new VerbeIndre("craindre"),
-				new VerbeEttre("mettre"),
-				new VerbeSoudre("résoudre")
-		));
-		ListeVerbes listeVerbes = new ListeVerbes(liste);
-		System.out.println(listeVerbes.conjugue(new Present("présent")));
-
+		}
+		catch(Exception e){
+			System.out.println(e.getMessage());
+		}
 	}
 
 }

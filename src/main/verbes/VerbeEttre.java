@@ -1,4 +1,4 @@
-package main;
+package main.verbes;
 
 
 public class VerbeEttre extends VerbeGroupe3 {
@@ -39,5 +39,35 @@ public class VerbeEttre extends VerbeGroupe3 {
     @Override
     public String terminaison3emePersonnePluriel() {
         return "ettent";
+    }
+
+    @Override
+    public String terminaison1erePersonneSingulierFutur() {
+        return "ettrai";
+    }
+
+    @Override
+    public String terminaison2emePersonneSingulierFutur() {
+        return "ettras";
+    }
+
+    @Override
+    public String terminaison3emePersonneSingulierFutur() {
+        return "ettra";
+    }
+
+    @Override
+    public String terminaison1erePersonnePlurielFutur() {
+        return "ettrons";
+    }
+
+    @Override
+    public String terminaison2emePersonnePlurielFutur() {
+        return "ettrez";
+    }
+
+    @Override
+    public String terminaison3emePersonnePlurielFutur() {
+        return "ettront";
     }
 }

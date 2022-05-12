@@ -1,4 +1,4 @@
-package main;
+package main.verbes;
 
 public class VerbeCer extends VerbeGroupe1 {
 

@@ -19,7 +19,7 @@ public abstract class TempCOR implements ITemp {
         if(resultat != null)
             return resultat;
         else
-            throw new IllegalArgumentException("Verbe incorrect");
+            throw new IllegalArgumentException("Temp incorrect");
     }
 
     private Temp determinerTemp1(String temp) {
